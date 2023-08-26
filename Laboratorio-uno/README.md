@@ -1,16 +1,4 @@
 # Telematics
-<p><code>Fundamentos de Telemática</code></p>
-<p>Creado por <code>GncDev</code> para explicar los fundamentos de los <code>Sistemas de comunicaciones</code> en los cursos de telemática y redes de computadores.</p>
-
-# Practica de laboratorio 01 - Caracterización
-
-## Objetivos 
-
-### Objetivo General
-Proporcionar el conocimiento y generar las habilidades necesarias en la configuración y gestión de dispositivos de redes.
-
-### Objetivos Específicos:
-- Conocer los números necesarios para configurar y caracterizar los diferentes dispositivos de red. :+1: 
 
 ---
 ## 1. [Configurar el entorno de trabajo](#) ✔
