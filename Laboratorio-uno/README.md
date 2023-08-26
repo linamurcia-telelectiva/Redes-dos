@@ -5,36 +5,24 @@
 <ol type="a">
 <li>¿Cual es la dirección de red y de broadcast de un host que tiene una ip 192.168.10.10/30?.</li>
 <code>
-
 192.168.10.10 => 11000000.10101000.00001010.00001010<br>
 Máscara /30   => 11111111.11111111.11111111.11111100<br>
 Dirección de red: 192.168.10.8
-
 Como nuestra direccion es de mascara /30 este tendra 2 bits por cada host utilizado 2<sup>32-30</sup>-2 = 2, entonces la dirección de broadcast es 192.168.10.11 que es la ultima dirección de la red.
 </code>
-
-
 <li>¿Que información se puede inferir de un host con la dirección 169.254.255.200/26?.</li>
-
 <code>
 La dirección IP "169.254.255.200/26" nos proporciona información sobre la dirección IP del host y la máscara de subred que se está utilizando. Aquí hay información que se puede inferir de esta dirección:<br><br>
-
 - Dirección IP del Host: La dirección IP del host es "169.254.255.200".
-
 - Máscara de Subred: La máscara de subred está representada por "/26". Esto significa que los primeros 26 bits de la dirección IP se utilizan para identificar la red y los últimos 6 bits se utilizan para identificar hosts en la red.
-
 - Rango de Direcciones IP: Dado que la máscara de subred es /26, el rango de direcciones IP en esta subred se calcula utilizando las direcciones de red y de broadcast. La dirección de red se obtiene al poner en 0 los bits que corresponden a los hosts. La dirección de broadcast se obtiene poniendo en 1 los bits de host. El rango de direcciones IP utilizable en esta subred sería desde la dirección de red + 1 hasta la dirección de broadcast - 1.
-
 - Número de Hosts: Dado que hay 6 bits para identificar hosts en la subred, esto permite 2^6 - 2 (restamos 2 para la dirección de red y la de broadcast) = 62 direcciones de host posibles en esta subred.
 </code>
-
 <li>¿Cuantas sub-redes puede lograr con la mascara 172.16.0.0/22?.</li>
-
 <code>
 11111111.11111111.111111|00.00000000| -> 10 sub-redes<br>
 2<sup>n</sup> = 2<sup>10</sup> = 1024<br>
 </code>
-
 <li>¿Cuantos clientes puede tener la sub red 172.16.0.0/22?.</li>
 <code>
 2<sup>n</sup>-2 = 2<sup>10</sup>-2 = 1022<br>
